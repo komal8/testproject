@@ -8,7 +8,7 @@ public class RetrieveTable {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium3\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Creo\\chromedriver_win32 (4)\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.w3schools.com/html/html_tables.asp");
 		driver.manage().window().maximize();

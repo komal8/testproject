@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="firefoxtestcases(failed)">
-    <parameter name="browser" value="firefox"/>
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="2" name="Test(failed)" parallel="methods">
     <classes>
-      <class name="testng.verifyTitle">
+      <class name="testng.Parallel">
         <methods>
-          <include name="verifypageTitle" invocation-numbers="0"/>
+          <include name="test1"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- testng.verifyTitle -->
+      </class> <!-- testng.Parallel -->
     </classes>
-  </test> <!-- firefoxtestcases(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

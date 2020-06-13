@@ -11,9 +11,9 @@ import org.openqa.selenium.interactions.Actions;
 
 public class RightclickAction {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium3\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Creo\\chromedriver_win32 (4)\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://swisnl.github.io/jQuery-contextMenu/demo.html");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -24,10 +24,12 @@ public class RightclickAction {
 		actions.contextClick(rightbtn).build().perform();
 		edit.click();
 		Alert alert=driver.switchTo().alert();
+		Thread.sleep(2000);
 		String editAlertText=alert.getText();
+		Thread.sleep(1000);
 		System.out.println("the text of the alert is:"+editAlertText);
 		alert.accept();
-		actions.contextClick().build().perform();
+		
 		
 
 	}

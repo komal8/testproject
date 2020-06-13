@@ -15,7 +15,7 @@ File fs=new File(".//property//config.properties");
 FileInputStream fins=new FileInputStream(fs);
 Properties p=new Properties();
 	p.load(fins);
-System.setProperty("webdriver.chrome.driver","D:\\selenium3\\chromedriver_win32\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver","C:\\Creo\\chromedriver_win32 (4)\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
 driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

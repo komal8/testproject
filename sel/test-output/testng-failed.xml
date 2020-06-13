@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.verifyTitle">
+      <class name="ListenerTest_Demo.ListenerDemo">
         <methods>
-          <include name="verifypageTitle"/>
+          <include name="FailTest"/>
         </methods>
-      </class> <!-- testng.verifyTitle -->
+      </class> <!-- ListenerTest_Demo.ListenerDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
